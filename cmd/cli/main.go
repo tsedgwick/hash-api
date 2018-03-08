@@ -15,7 +15,7 @@ func init() {
 
 func main() {
 	flag.Parse()
-	c := &api.Client{}
+	c := api.New()
 	i := c.Encode([]byte(password))
 	log.Printf("result : %v \n", i)
 }
