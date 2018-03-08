@@ -37,6 +37,12 @@ Server [server](cmd/server/) covers:
     curl -X GET \
         http://localhost:8080/v3/hash/7887
 ```
+* GET stats (retrieve an array of stats based on endpoint)
+```
+    curl -X GET \
+        http://localhost:8080/stats
+```    
+
 * Graceful Shutdown
 ```
     curl -X POST \
